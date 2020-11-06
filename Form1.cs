@@ -73,6 +73,17 @@ namespace midtterm
             }
         }
 
+        private void btn_clr_Click(object sender, EventArgs e)
+        {
+            rtbLog.Text = "";
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            m++;
+            m_rest();
+        }
+
         private void btnpump_l_Click(object sender, EventArgs e)
         {
             int randomNum = new Random().Next(5); //0-100

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnpump_h = new System.Windows.Forms.Button();
             this.MON = new System.Windows.Forms.Label();
             this.btnUP = new System.Windows.Forms.Button();
@@ -35,6 +36,8 @@
             this.rtbLog = new System.Windows.Forms.RichTextBox();
             this.btnpump_l = new System.Windows.Forms.Button();
             this.picResult = new System.Windows.Forms.PictureBox();
+            this.btn_clr = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picResult)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,11 +112,28 @@
             this.picResult.TabIndex = 8;
             this.picResult.TabStop = false;
             // 
+            // btn_clr
+            // 
+            this.btn_clr.Location = new System.Drawing.Point(257, 541);
+            this.btn_clr.Name = "btn_clr";
+            this.btn_clr.Size = new System.Drawing.Size(58, 34);
+            this.btn_clr.TabIndex = 14;
+            this.btn_clr.Text = "清空";
+            this.btn_clr.UseVisualStyleBackColor = true;
+            this.btn_clr.Click += new System.EventHandler(this.btn_clr_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 590);
+            this.Controls.Add(this.btn_clr);
             this.Controls.Add(this.btnpump_h);
             this.Controls.Add(this.MON);
             this.Controls.Add(this.btnUP);
@@ -139,6 +159,8 @@
         private System.Windows.Forms.RichTextBox rtbLog;
         private System.Windows.Forms.PictureBox picResult;
         private System.Windows.Forms.Button btnpump_l;
+        private System.Windows.Forms.Button btn_clr;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
