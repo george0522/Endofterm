@@ -33,8 +33,8 @@
             this.btnUP = new System.Windows.Forms.Button();
             this.labLog = new System.Windows.Forms.Label();
             this.rtbLog = new System.Windows.Forms.RichTextBox();
-            this.picResult = new System.Windows.Forms.PictureBox();
             this.btnpump_l = new System.Windows.Forms.Button();
+            this.picResult = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picResult)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,16 +87,7 @@
             this.rtbLog.Name = "rtbLog";
             this.rtbLog.Size = new System.Drawing.Size(263, 357);
             this.rtbLog.TabIndex = 9;
-            this.rtbLog.Text = "1\n2\n3\n";
-            // 
-            // picResult
-            // 
-            this.picResult.Location = new System.Drawing.Point(402, 178);
-            this.picResult.Name = "picResult";
-            this.picResult.Size = new System.Drawing.Size(322, 357);
-            this.picResult.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picResult.TabIndex = 8;
-            this.picResult.TabStop = false;
+            this.rtbLog.Text = "";
             // 
             // btnpump_l
             // 
@@ -108,6 +99,15 @@
             this.btnpump_l.Text = "低階卡片";
             this.btnpump_l.UseVisualStyleBackColor = true;
             this.btnpump_l.Click += new System.EventHandler(this.btnpump_l_Click);
+            // 
+            // picResult
+            // 
+            this.picResult.Location = new System.Drawing.Point(402, 178);
+            this.picResult.Name = "picResult";
+            this.picResult.Size = new System.Drawing.Size(322, 357);
+            this.picResult.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picResult.TabIndex = 8;
+            this.picResult.TabStop = false;
             // 
             // Form1
             // 

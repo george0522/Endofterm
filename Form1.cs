@@ -16,7 +16,7 @@ namespace midtterm
     public partial class Form1 : Form
     {
         List<Image> list = new List<Image>();
-        int m;
+        int m,m_add=5;
         string m_str;
         int m_l = 2, m_h = 5;
         public Form1()
@@ -51,7 +51,7 @@ namespace midtterm
 
         private void btnUP_Click(object sender, EventArgs e)
         {
-            m++;
+            m=m+m_add;
             m_str = Convert.ToString(m);
             MON.Text = m_str;
         }
@@ -65,6 +65,7 @@ namespace midtterm
                 picResult.Image = list[index];
                 m = m - m_h;
                 m_rest();
+                rtbLog.Text = rtbLog.Text +"恭喜抽中 編號"+ Convert.ToString(index+91) +"神奇寶貝\n ";
             }
             else
             {
@@ -81,14 +82,13 @@ namespace midtterm
                 picResult.Image = list[index];
                 m = m - m_l;
                 m_rest();
+                rtbLog.Text = rtbLog.Text + "恭喜抽中 編號" + Convert.ToString(index+1) + "神奇寶貝\n ";
             }
             else
             {
                 MessageBox.Show("金額不足", "警告");
             }
         }
-
-
 
         private void m_rest()
         {
