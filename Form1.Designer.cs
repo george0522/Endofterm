@@ -38,6 +38,8 @@
             this.picResult = new System.Windows.Forms.PictureBox();
             this.btn_clr = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnCLALL = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picResult)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,11 +116,11 @@
             // 
             // btn_clr
             // 
-            this.btn_clr.Location = new System.Drawing.Point(257, 541);
+            this.btn_clr.Location = new System.Drawing.Point(240, 541);
             this.btn_clr.Name = "btn_clr";
-            this.btn_clr.Size = new System.Drawing.Size(58, 34);
+            this.btn_clr.Size = new System.Drawing.Size(75, 34);
             this.btn_clr.TabIndex = 14;
-            this.btn_clr.Text = "清空";
+            this.btn_clr.Text = "紀錄清空";
             this.btn_clr.UseVisualStyleBackColor = true;
             this.btn_clr.Click += new System.EventHandler(this.btn_clr_Click);
             // 
@@ -128,11 +130,33 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("新細明體", 20F);
+            this.label1.Location = new System.Drawing.Point(84, 127);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 27);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "等級:";
+            // 
+            // btnCLALL
+            // 
+            this.btnCLALL.Location = new System.Drawing.Point(830, 547);
+            this.btnCLALL.Name = "btnCLALL";
+            this.btnCLALL.Size = new System.Drawing.Size(72, 23);
+            this.btnCLALL.TabIndex = 16;
+            this.btnCLALL.Text = "資料清空 ";
+            this.btnCLALL.UseVisualStyleBackColor = true;
+            this.btnCLALL.Click += new System.EventHandler(this.btnCLALL_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 590);
+            this.Controls.Add(this.btnCLALL);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_clr);
             this.Controls.Add(this.btnpump_h);
             this.Controls.Add(this.MON);
@@ -143,6 +167,7 @@
             this.Controls.Add(this.btnpump_l);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picResult)).EndInit();
             this.ResumeLayout(false);
@@ -161,6 +186,8 @@
         private System.Windows.Forms.Button btnpump_l;
         private System.Windows.Forms.Button btn_clr;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCLALL;
     }
 }
 
