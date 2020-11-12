@@ -66,12 +66,12 @@
             // 
             // btnUP
             // 
-            this.btnUP.Font = new System.Drawing.Font("新細明體", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnUP.Font = new System.Drawing.Font("新細明體", 36F);
             this.btnUP.Location = new System.Drawing.Point(339, 16);
             this.btnUP.Name = "btnUP";
             this.btnUP.Size = new System.Drawing.Size(146, 125);
             this.btnUP.TabIndex = 11;
-            this.btnUP.Text = "錢";
+            this.btnUP.Text = "工作";
             this.btnUP.UseVisualStyleBackColor = true;
             this.btnUP.Click += new System.EventHandler(this.btnUP_Click);
             // 

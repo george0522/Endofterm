@@ -99,6 +99,7 @@
     <Content Include="res\108.png" />
     <Content Include="res\109.png" />
     <Content Include="res\110.png" />
+    <None Include="readme_midtterm.docx" />
     <None Include="Resources\110.png" />
     <None Include="Resources\109.png" />
     <None Include="Resources\108.png" />

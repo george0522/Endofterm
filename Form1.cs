@@ -18,9 +18,9 @@ namespace midtterm
         int m_add = 5;
         string m_str;
         int m_l = 2, m_h = 5;
-        public Form1()
+        public Form1()                                      
         {
-            m = midtterm.Properties.Settings.Default.MONEY;
+            m = midtterm.Properties.Settings.Default.MONEY;         //讀取上次紀錄
             lv = midtterm.Properties.Settings.Default.lv;
             InitializeComponent();
         }
@@ -53,7 +53,7 @@ namespace midtterm
 
         #region 生錢
 
-        private void btnUP_Click(object sender, EventArgs e)
+        private void btnUP_Click(object sender, EventArgs e)            //生錢按鍵
         {
             m = m + m_add;
             m_str = Convert.ToString(m);
@@ -117,7 +117,7 @@ namespace midtterm
         {
             m++;
             m_rest();
-            if (exp >= 10)
+            if (exp >= 10)                                              //等級提升
             {
                 lv++;
                 exp = exp - 10;
@@ -132,9 +132,7 @@ namespace midtterm
             midtterm.Properties.Settings.Default.Save();
         }
 
-
-
-        private void m_rest()
+        private void m_rest()                                           //重整金額數量
         {
             m_str = Convert.ToString(m);
             MON.Text = m_str;
